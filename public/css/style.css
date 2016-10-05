@@ -151,55 +151,57 @@ body {
 // }
 
 .thumbnail {
-    border: 5px solid transparent;
-    //good stuff with box-shadow  box-shadow: 0px 30px 40px rgba(0,0,0,.1);
-    
+    // border: 5px solid transparent;
+    //box-shadow: 0px 0px 20px 2px rgb(85, 152, 255);
+
+
+
 }
 
 .thumbnail:hover{
-    box-shadow: 8px 15px 14px rgba(0, 0, 0, 0.43);
+      box-shadow: 0px -4px 8px 0px rgb(85, 152, 255);
 }
 
 #organized {
-    background-image: url('../images/cover-organized.jpg');
+    background-image: url('../images/node.jpg');
     background-position: center;
     background-size: cover;
     height: 465px;
 }
 
 #react {
-    background-image: url('../images/cover-organized.jpg');
+    background-image: url('../images/react.jpg');
     background-position: center;
     background-size: cover;
-    height: 465px;
+    height: 341px;
 }
 
 #mag {
-    background-image: url('../images/cover-organized.jpg');
+    background-image: url('../images/client.jpg');
     background-position: center;
     background-size: cover;
-    height: 465px;
+    height: 341px;
 }
 
 #mongo {
-    background-image: url('../images/cover-organized.jpg');
+    background-image: url('../images/mongo.jpg');
     background-position: center;
     background-size: cover;
     height: 465px;
 }
 
 #model {
-    background-image: url('../images/cover-organized.jpg');
+    background-image: url('../images/full.jpg');
     background-position: center;
     background-size: cover;
-    height: 465px;
+    height: 412px;
 }
 
 #api {
-    background-image: url('../images/cover-organized.jpg');
+    background-image: url('../images/api.jpg');
     background-position: center;
     background-size: cover;
-    height: 465px;
+    height: 412px;
 }
 
 .code{
@@ -208,11 +210,15 @@ body {
     line-height: 200px;
     background: #3b7e98;
     text-decoration: none;
-    padding: 23px;
-    font-size: 45px;
+    padding: 8px;
+    font-size: 52px;
     color: black;
-    opacity: .7;
+    opacity: .6;
+      border-radius: 5px;
 
+}
+.code:hover{
+    color:white;
 }
 
 .demo{
@@ -221,10 +227,29 @@ body {
     line-height: 197px;
     background: #3b7e98;
     text-decoration: none;
-    padding: 23px;
-    font-size: 45px;
+    padding: 8px;
+    font-size: 52px;
     color: black;
-    opacity: .7;
-      margin-top: 150px;
-
+    border-radius: 5px;
+    opacity: .6;
+    margin-top: 150px;
 }
+.demo:hover{
+    color:white;
+}
+
+.projects p {
+    background-color: rgba(255, 255, 255, 0.145);
+    border: 1px solid lightgrey;
+    margin-top: -1px;
+    color: white;
+    height: 58px;
+    font-weight: 200;
+    font-family: sans-serif;
+    line-height: 31px;
+    border-radius: 0px 0px 2px 2px;
+}
+
+
+
+
