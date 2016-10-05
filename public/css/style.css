@@ -13,7 +13,6 @@ body {
     text-align: center;
     font-size: 100px;
     color: white;
-    //width:100px;
     font-weight: 400;
     //background-color: rgba(255, 255, 255, 0.375);
 }
@@ -86,10 +85,9 @@ body {
     margin: auto;
 }
 
-div {
-    border: 1px solid black;
-}
-
+// div {
+//     border: 5px solid transparent;
+// }
 .avatar {
     border-radius: 100%;
     display: inline-block;
@@ -138,8 +136,8 @@ div {
 .first-column,
 .second-column,
 .third-column {
-    width: 33%;
-    //display: inline-block;
+    width: 30%;
+    margin: 18px;
 }
 
 .projects {
@@ -148,11 +146,72 @@ div {
     margin: auto;
 }
 
-.organized img, .react img, .mag img, .mongo img, .model img, .api img {
-    width: 100%;
-    background-size: cover;
+// #organized img,
+// #react img,
+// #mag img,
+// #mongo img,
+// #model img,
+// #api img {
+//     width: 100%;
+//     background-size: cover;
+// }
+
+.thumbnail {
+    border: 5px solid transparent;
+    //good stuff with box-shadow  box-shadow: 0px 30px 40px rgba(0,0,0,.1);
 }
 
-// .react {
-//     height: 300px;
-// }
+#organized {
+    background-image: url('../images/cover-organized.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#react {
+    background-image: url('../images/cover-organized.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#mag {
+    background-image: url('../images/cover-organized.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#mongo {
+    background-image: url('../images/cover-organized.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#model {
+    background-image: url('../images/cover-organized.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#api {
+    background-image: url('../images/cover-organized.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+.code{
+    line-height: 100px;
+    background: #3b7e98;
+}
+
+.demo{
+    border: 6px solid #21b1da;
+    line-height: 100px;
+    margin-top: 150px;
+    background: #3b7e98;
+
+}
