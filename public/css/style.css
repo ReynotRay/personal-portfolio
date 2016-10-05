@@ -1,19 +1,21 @@
 body {
-
     // box-sizing: border-box;
-    font: Lustria,Georgia;
+    font: Lustria, Georgia;
     background: black;
 }
+
 .container {
     width: 100%;
     margin: auto;
 }
 
-.page-header .name{
+.page-header .name {
     text-align: center;
     font-size: 100px;
     color: white;
+    //width:100px;
     font-weight: 400;
+    //background-color: rgba(255, 255, 255, 0.375);
 }
 
 .page-header .title {
@@ -25,152 +27,132 @@ body {
     margin-top: -53px;
 }
 
-.nav-header{
-    margin: 10px;
+.menu-bar {
+    margin: 18px;
 }
-.links{
+
+.links {
     width: 100%;
     //position: fixed;
-    color: white;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 40px;
     // background: #980013;
     text-align: right;
     height: 45px;
     color: white;
 }
+
 .links a {
     text-decoration: none;
     margin: auto 0px;
-    color:white;
+    color: white;
     margin: 0px 44px 0px 0px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
 }
 
 .links a:hover {
     cursor: pointer;
     color: #00004d;
-    color:lightgrey;
+    color: lightgrey;
 }
+
 .page-header {
     background-image: url('../images/nature.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 468px;
 }
+
 // .hi{
 //     width: 100px;
 //     margin:auto;
 // }
-.texas {
-    color: maroon;
-}
 .introduction {
     background: white;
-}
-.introduction h1 {
-    margin-top: 5.5rem;
-    font-size: 4.125rem;
-    font-family: "proxima-nova";
+    text-align: center;
+    background-image: url('../images/intro.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-.introduction h5 {
-    margin: 1.313rem;
-    color: black;
-    font-size: 2rem;
-}
-.introduction p {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 32px;
-}
 .content-main {
-      width: 676px;
+    width: 100%;
     display: block;
     margin: auto;
 }
+
 div {
     border: 1px solid black;
 }
-.blue {
-    color: blue;
-}
 
-.header h1 {
-    text-align: center;
-    font-size: 60px;
-    padding-left: 40px;
-    color: #00004d;
-    text-shadow: 1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue, 0 1px lightblue;
-}
-.aboutme {
-    background-color: white;
-    font-size: 31px;
-}
-.projects {
-    background-color: white;
-    margin-top: 171px;
-    font-size: 31px;
-}
-.background {
-    text-align: center;
-    padding: 0px 271px;
-}
-hr {
-    border: 0;
-    border-top: 1px solid #eaebec;
-    margin: 1.313rem 0;
-}
-h5 {
-    border: 0;
-    margin: 1.313rem;
-    color: #838994;
-}
-h4 {
-    text-align: center;
-    font-size: 32px;
-}
-body h5, h3 {
-    text-align: center;
-}
-.copy {
-    text-align: right;
-}
-.breadcrumb {
-    padding-right: 40px;
-    text-align: center;
-}
-.breadcrumb li {
-    border-radius: 78px;
-    width: 53px;
-    height: 56px;
+.avatar {
+    border-radius: 100%;
     display: inline-block;
-    margin: 1.25rem 5px;
-    border: 1px solid Grey;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 53px;
-}
-.social .twitter {
-    color: #55acee;
-}
-.github a {
-    color: black;
-}
-.twitter a {
-    color: #80aaff;
-}
-.linkedin a {
-    color: #0099e6;
-}
-.content {
-    margin-top: 190px;
-}
-.breadcrumb a:hover {
-    color: blue;
-}
-.social {
-    background-color: lightblue;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.075);
+    margin-top: 22px;
 }
 
-//@import url(https://fonts.googleapis.com/css?family=Roboto);
+.yo {
+    border-radius: 100%;
+    display: block;
+    width: 10em;
+}
+
+.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.icons li {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.075);
+    padding: 13px;
+    border-radius: 100%;
+    margin: 8px;
+}
+
+.icons li:hover {
+    background-color: rgba(255, 255, 255, 0.575);
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.icons li a {
+    color: white;
+    text-decoration: none;
+    font-size: 29px;
+}
+
+.first-column,
+.second-column,
+.third-column {
+    width: 33%;
+    //display: inline-block;
+}
+
+.projects {
+    width: 990px;
+    display: -webkit-flex;
+    margin: auto;
+}
+
+.organized img, .react img, .mag img, .mongo img, .model img, .api img {
+    width: 100%;
+    background-size: cover;
+}
+
+// .react {
+//     height: 300px;
+// }
