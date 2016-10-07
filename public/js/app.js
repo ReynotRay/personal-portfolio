@@ -1,4 +1,5 @@
 'use strict';
+
 var Portfolio = function() {
     // this.input = $('.list-todo');
     // this.list = $('.todo-items');
