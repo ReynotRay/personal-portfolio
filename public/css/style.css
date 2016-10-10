@@ -185,8 +185,8 @@ body {
     height: 341px;
 }
 
-#mongo {
-    background-image: url('../images/mongo.jpg');
+#meal {
+    background-image: url('../images/meal.jpg');
     background-position: center;
     background-size: cover;
     height: 465px;
