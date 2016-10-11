@@ -8,7 +8,7 @@ var Portfolio = function() {
 Portfolio.prototype.mouseenter = function(event) {
 $( ".thumbnail" ).mouseenter(function() {
   	$(this).children().fadeIn();
-    $(this).css("filter", "saturate(5)");
+    $(this).css("filter", "saturate(3)");
   })
   .mouseleave(function() {
   	$(this).children().hide();
