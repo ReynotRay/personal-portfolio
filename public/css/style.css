@@ -1,0 +1,266 @@
+body {
+    background: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+}
+
+.links {
+    width: 100%;
+    font-size: 25px;
+    line-height: 54px;
+    text-align: right;
+    height: 45px;
+    color: white;
+}
+
+.links a {
+    text-decoration: none;
+    margin: auto 0px;
+    color: white;
+    line-height: 10px;
+    margin: 0px 44px 0px 0px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.links a:hover {
+    cursor: pointer;
+    color: #7a84c6;
+}
+
+.page-header {
+    background-image: url('../images/austin.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 468px;
+}
+
+.page-header .name {
+    text-align: center;
+    font-size: 119px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 300px;
+    //background blur  background-color: rgba(255, 255, 255, 0.375);
+}
+
+.page-header .title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: 100;
+    margin-top: -147px;
+}
+
+.introduction {
+    background: white;
+    text-align: center;
+    background-image: url('../images/intro.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.content-main {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.avatar {
+    border-radius: 100%;
+    display: inline-block;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.075);
+    margin-top: 22px;
+}
+
+.yo {
+    border-radius: 100%;
+    display: block;
+    width: 10em;
+}
+
+.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.icons li {
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 100%;
+    margin: 8px;
+}
+
+.icons .logos {
+    padding: 24px 14px 15px 15px;
+}
+
+.logo {
+    padding: 24px 0px 15px 0px;
+}
+
+#first-snapchat {
+    width: 32px;
+    height: 30px;
+    padding: 0px 12px 0px 13px;
+}
+
+.icons li:hover {
+    background-color: rgba(255, 255, 255, 0.575);
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.icons li a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.fa-arrow {
+    background-image: url('../images/snapchat.png');
+}
+
+.first-column,
+.second-column,
+.third-column {
+    width: 30%;
+    margin: 18px;
+}
+
+.projects {
+    width: 990px;
+    display: -webkit-flex;
+    margin: auto;
+}
+
+.thumbnail {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0px -4px 8px 0px rgb(4, 20, 50);
+}
+
+#organized {
+    background-image: url('../images/node.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#snapchat {
+    display: none;
+    width: 115px;
+}
+
+#react {
+    background-image: url('../images/react.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#mag {
+    background-image: url('../images/client.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 310px;
+}
+
+#sky {
+    background-image: url('../images/skyline.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 310px;
+}
+
+#meal {
+    background-image: url('../images/meal.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#shopping {
+    background-image: url('../images/shopping.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 465px;
+}
+
+#api {
+    background-image: url('../images/api.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 412px;
+}
+
+#landing-page {
+    background-image: url('../images/karma.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 310px;
+}
+
+.code {
+    display: none;
+    cursor: pointer;
+    line-height: 154px;
+    background: #3b7e98;
+    text-decoration: none;
+    padding: 0px 50px 0px 50px;
+    font-size: 50px;
+    color: black;
+    opacity: .8;
+    border-radius: 5px;
+}
+
+.code:hover {
+    color: white;
+}
+
+.demo {
+    display: none;
+    cursor: pointer;
+    line-height: 197px;
+    background: #3b7e98;
+    text-decoration: none;
+    padding: 0px 50px 0px 50px;
+    font-size: 50px;
+    color: black;
+    border-radius: 5px;
+    opacity: .8;
+    margin-top: 150px;
+}
+
+.demo:hover {
+    color: white;
+}
+
+.projects p {
+    background-color: rgba(255, 255, 255, 0.145);
+    border: 1px solid lightgrey;
+    margin-top: -1px;
+    color: white;
+    height: 58px;
+    line-height: 31px;
+    border-radius: 0px 0px 10px 10px;
+}
