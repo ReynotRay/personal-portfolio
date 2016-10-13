@@ -1,6 +1,7 @@
 body {
     background: black;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Muli', sans-serif;
+
     font-weight: bold;
 }
 
@@ -10,7 +11,7 @@ body {
 
 .links {
     width: 100%;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 54px;
     text-align: right;
     height: 45px;
@@ -19,7 +20,6 @@ body {
 
 .links a {
     text-decoration: none;
-    margin: auto 0px;
     color: white;
     line-height: 10px;
     margin: 0px 44px 0px 0px;
@@ -45,7 +45,7 @@ body {
 
 .page-header .name {
     text-align: center;
-    font-size: 119px;
+    font-size: 101px;
     color: white;
     margin-top: 10px;
     font-weight: 400;
@@ -255,12 +255,21 @@ body {
     color: white;
 }
 
+// #sky, #meal {
+//     opacity: 0;
+// }
+
 .projects p {
     background-color: rgba(255, 255, 255, 0.145);
     border: 1px solid lightgrey;
     margin-top: -1px;
     color: white;
+    font-size: 14px;
     height: 58px;
     line-height: 31px;
     border-radius: 0px 0px 10px 10px;
+}
+
+.skills{
+    width: 500px;
 }
