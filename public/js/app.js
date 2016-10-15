@@ -14,7 +14,7 @@ Portfolio.prototype.mouseenter = function(event) {
   	$(this).children().hide();
     $(this,'img').css("filter", "saturate(1)");
   });
-  portfolio.showSnapChat();
+  portfolio.mouseenter();
 }
 
 Portfolio.prototype.showSnapChat = function(event) {
