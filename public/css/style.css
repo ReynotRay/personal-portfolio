@@ -7,29 +7,24 @@ body {
 .container {
     width: 100%;
     //position: relative;
+    -webkit-animation: fadein 5s;
 }
 
 #my-story {
-    -webkit-animation: fadein 2s;
+    
     width: 979px;
     height: 600px;
     -webkit-clip-path: polygon(0 0, 0 0, 0 934px, 750px 0);
     position: absolute;
-    border: 5px solid red;
     background: yellow;
 }
 
-#my-story:hover{
-    -webkit-clip-path: polygon(0 0, 0 0, 0 1999px, 1143px 0);
-}
-
 #my-projects {
-    -webkit-animation: fadein 2s;
+    //-webkit-animation: fadein 8s;
     width: 979px;
     height: 600px;
     -webkit-clip-path: polygon(746px 0, 991px 0, 990px 613px, 240px 613px);
-    position: relative;
-    border: 5px solid red;
+    position: absolute;
     background yellow;
 }
 
