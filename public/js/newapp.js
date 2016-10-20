@@ -18,7 +18,7 @@ Portfolio.prototype.mouseenter = function() {
         })
         .mouseleave(function() {
             console.log('left story');
-            $('#my-projects').css({ "-webkit-clip-path": "polygon(746px 0, 991px 0, 990px 613px, 240px 613px)", "filter": "grayscale(62%)" });
+            $('#my-projects').css({ "-webkit-clip-path": "polygon(746px 0, 991px 0, 990px 613px, 240px 613px)", "filter": "grayscale(0%)" });
             $('#projects').css("opacity","1.0");
         });
     $("#my-projects").mouseenter(function() {
@@ -28,7 +28,7 @@ Portfolio.prototype.mouseenter = function() {
             //$('#projects').css({ "font-size": "40px" });
         })
         .mouseleave(function() {
-            $("#my-story").css({ "-webkit-clip-path": "polygon(0 0, 0 0, 0 934px, 750px 0)", "filter": "grayscale(62%)" });
+            $("#my-story").css({ "-webkit-clip-path": "polygon(0 0, 0 0, 0 934px, 750px 0)", "filter": "grayscale(0%)" });
             $('#my-projects').css("-webkit-clip-path", "polygon(746px 0, 991px 0, 990px 613px, 240px 613px)");
             $('#story').css("opacity","1.0");
         });
@@ -36,8 +36,8 @@ Portfolio.prototype.mouseenter = function() {
   
     $(window).scroll(function(){
         if ($(window).scrollTop() > 450){
-            $(".links").css("background-color","black");
-        } else{ $(".links").css("background-color","rgba(0, 0, 0, 0.41)");
+            $(".links").css("background-color","rgba(0, 0, 0, 0.71)");
+        } else{ $(".links").css("background-color","transparent");
 
         }
 
@@ -50,6 +50,12 @@ Portfolio.prototype.showStory = function(event) {
         $(".start-section").fadeOut();
         $(".header-container").fadeIn(2000);
         $(".aboutme-container").fadeIn(2000);
+         $(".my-career").fadeIn(2000);
+          $(".skills").fadeIn(2000);
+          $("body").css("background","white");
+
+
+
         //$("#my-story").fadeOut({"-webkit-transition": ".9s", "filter": "saturate(0)","-webkit-clip-path":"polygon(0 0, 0 0, 0 309px, 304px 0)"});
     })
 
@@ -62,7 +68,7 @@ Portfolio.prototype.showStory = function(event) {
 }
 Portfolio.prototype.slideShow = function(x) {
     var photo_index = 0;
-    var photos = ["austin.jpg" ,"nature2.jpg" , "nature3.jpg"];
+    var photos = ["flag.jpg" ,"utah.jpg" , "forest.jpg"];
 
     function switchPhoto() {
         photo_index = (photo_index + 1) % photos.length;
