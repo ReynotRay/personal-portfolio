@@ -47,7 +47,7 @@ Portfolio.prototype.showStory = function(event) {
     $("#my-story").click(function() {
         console.log("clicked within showStory")
             //$("#my-projects").fadeOut();
-        $(".start-section").fadeOut();
+        $(".intro-section").fadeOut();
         $(".header-container").fadeIn(2000);
         $(".aboutme-container").fadeIn(2000);
          $(".my-career").fadeIn(2000);
@@ -60,7 +60,7 @@ Portfolio.prototype.showStory = function(event) {
     })
 
     $("#my-projects").click(function() {
-        $(".start-section").fadeOut();
+        $(".intro-section").fadeOut();
         $(".header-container").fadeIn(2000);
         $("#my-story").fadeOut();
         $(".projects-container").fadeIn(2000);
@@ -68,7 +68,7 @@ Portfolio.prototype.showStory = function(event) {
 }
 Portfolio.prototype.slideShow = function(x) {
     var photo_index = 0;
-    var photos = ["flag.jpg" ,"utah.jpg" , "forest.jpg"];
+    var photos = ["nature3.jpg" ,"utah.jpg" , "forest.jpg"];
 
     function switchPhoto() {
         photo_index = (photo_index + 1) % photos.length;
