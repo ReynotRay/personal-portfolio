@@ -45,13 +45,12 @@ Portfolio.prototype.mouseenter = function() {
 
 Portfolio.prototype.showStory = function(event) {
     $("#my-story").click(function() {
-        console.log("clicked within showStory")
-            //$("#my-projects").fadeOut();
-        $(".intro-section").fadeOut();
+         $(".intro-section").fadeOut(500);
         $(".header-container").fadeIn(2000);
         $(".aboutme-container").fadeIn(2000);
-         $(".my-career").fadeIn(2000);
-          $(".skills").fadeIn(2000);
+         $(".my-career").fadeIn();
+         $('#page-header').show();
+          $(".skills").fadeIn();
           $("body").css("background","white");
 
 
@@ -60,7 +59,9 @@ Portfolio.prototype.showStory = function(event) {
     })
 
     $("#my-projects").click(function() {
-        $(".intro-section").fadeOut();
+        $(".intro-section").hide();
+        $('#page-header').fadeIn();
+        
         $(".header-container").fadeIn(2000);
         $("#my-story").fadeOut();
         $(".projects-container").fadeIn(2000);
@@ -80,10 +81,47 @@ Portfolio.prototype.slideShow = function(x) {
 }
 
 Portfolio.prototype.displayDivs = function() {
-       $(window).scroll( function(){
+    $(window).scroll( function(){
     
         /* Check the location of each desired element */
         $('.vertical-block').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.progress').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.icons li').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
