@@ -20,7 +20,7 @@ h1 {
 .intro-section {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     background:black;
 }
 
@@ -108,6 +108,7 @@ h1 {
 }
 
 .links {
+    z-index: 1000;
     width: 100%;
     margin-top: -5px;
     font-size: 19px;
@@ -123,7 +124,6 @@ h1 {
 }
 
 .links:hover {
-    // padding: 10px;
     height: 54px;
     background-color: black;
     -o-transition: .5s;
@@ -134,6 +134,7 @@ h1 {
 
 .links a {
     text-decoration: none;
+        font-weight: bolder;
     color: white;
     line-height: 10px;
     margin: 0px 44px 0px 0px;
@@ -226,7 +227,7 @@ h1 {
 }
 
 .icons li {
-    padding: 29px 12px 13px 17px;
+    padding: 24px 8px 10px 11px;
 }
 
 .icons li:hover {
@@ -261,9 +262,10 @@ h1 {
 .projects-container {
     background: white;
     text-align: center;
-    background-image: url('../images/intro.jpg');
-    background-position: center;
-    background-size: cover;
+    
+    //background-image: url('../images/intro.jpg');
+    //background-position: center;
+    //background-size: cover;
 }
 
 .first-column,
@@ -284,7 +286,7 @@ h1 {
 }
 
 .thumbnail:hover {
-    box-shadow: 0px -4px 8px 0px rgb(4, 20, 50);
+    box-shadow: 0px -4px 8px 0px rgb(51, 133, 255);
 }
 
 #organized {
@@ -361,8 +363,10 @@ h1 {
     border-radius: 5px;
 }
 
-.myprojectheader {
+.projectheader {
     text-align: center;
+    font-size:29px;
+
 }
 
 .code:hover {
@@ -387,14 +391,10 @@ h1 {
     color: white;
 }
 
-// #sky, #meal {
-//     opacity: 0;
-// }
 .projects p {
     background-color: rgba(255, 255, 255, 0.145);
     border: 1px solid lightgrey;
     margin-top: -1px;
-    color: white;
     font-size: 14px;
     height: 58px;
     line-height: 31px;
@@ -418,6 +418,14 @@ h1 {
     margin: auto;
     text-align: center;
     height: 151px;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+}
+
+.vertical-block h2{
+    font-size: 22px;
 }
 
 .work {
@@ -425,7 +433,6 @@ h1 {
     width: 418px;
     margin-top: 9px;
     border-radius: 5px;
-    margin-left: 44px;
 }
 
 #rbdevelop {
@@ -433,6 +440,7 @@ h1 {
 }
 
 .fa-desktop,
+.fa-code,
 .fa-briefcase,
 .fa-graduation-cap {
     position: absolute;
@@ -449,7 +457,7 @@ h1 {
     float: right;
     width: 107px;
     margin-top: 44px;
-    margin-right: 337px;
+    margin-right: 300px;
 }
 
 .abcd,
@@ -462,6 +470,7 @@ h1 {
 
 #sa-conxepts {
     float: right;
+    margin-right: -30px;
 }
 
 #bootcamp {
@@ -470,6 +479,7 @@ h1 {
 
 #graduation {
     float: right;
+     margin-right: -30px;
 }
 
 #mireles {
@@ -479,11 +489,9 @@ h1 {
 span {
     color: #3385FF;
 }
-
-// .progress {
-//     
-//     
-// }
+#conxepts {
+    font-size: 13px;
+}
 .skills {
     width: 940px;
     margin: auto;
@@ -498,11 +506,8 @@ span {
     margin-top: 57px;
 }
 
-.hideme {
-    opacity: 0;
-}
-
 .progress {
+    opacity: 0;
     height: 20px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -513,6 +518,10 @@ span {
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
 }
 
 .progress-bar {

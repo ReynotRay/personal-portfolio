@@ -32,7 +32,19 @@ Portfolio.prototype.mouseenter = function() {
             $('#my-projects').css("-webkit-clip-path", "polygon(746px 0, 991px 0, 990px 613px, 240px 613px)");
             $('#story').css("opacity","1.0");
         });
+    }
+        Portfolio.prototype.enterThumbnail = function(event) {
+    $( ".thumbnail" ).mouseenter(function() {
+    $(this).children().fadeIn();
+    $(this).css("filter", "saturate(2)");
+  })
+  .mouseleave(function() {
+    $(this).children().hide();
+    $(this,'img').css("filter", "saturate(1)");
+  });
+  portfolio.mouseenter();
 }
+
   
     $(window).scroll(function(){
         if ($(window).scrollTop() > 450){
@@ -60,6 +72,7 @@ Portfolio.prototype.showStory = function(event) {
     })
 
     $("#my-projects").click(function() {
+        $("body").css("background","white");
         $(".intro-section").fadeOut();
         $(".header-container").fadeIn(2000);
         $("#my-story").fadeOut();
@@ -98,6 +111,24 @@ Portfolio.prototype.displayDivs = function() {
         }); 
     
     });
+       $(window).scroll( function(){
+        $('.progress').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+
+
 
  }   
 
@@ -106,6 +137,7 @@ portfolio.mouseenter();
 portfolio.showStory();
 portfolio.slideShow();
 portfolio.displayDivs();
+portfolio.enterThumbnail();
 
 
 
