@@ -4,11 +4,11 @@ body {
     margin: 0px;
 }
 
+
 h1 {
     text-align: center;
 }
 
-//start of intro section
 .container {
     margin: auto;
     -webkit-animation: fadein 2s;
@@ -41,11 +41,11 @@ h1 {
 #rey {
     position: relative;
     margin: auto;
-    border: 7px solid white;
-    transform: skewY(-1.5deg);
+    border-radius: 10px;
     width: 153px;
     top: -442px;
-    color: white;
+    color: #00a9ff;
+    background: rgb(255, 255, 255);
     font-size: 65px;
     -o-transition: .5s;
     -ms-transition: .5s;
@@ -61,7 +61,7 @@ h1 {
     width: 234px;
     padding: 8px;
     background: #3385FF;
-    background: rgba(45, 95, 136, 0.66);
+    background: rgba(51, 133, 255, 0.56);
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -79,7 +79,7 @@ h1 {
     width: 234px;
     padding: 8px;
     color: white;
-    background: rgba(45, 95, 136, 0.66);
+    background: rgba(51, 133, 255, 0.56);
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -88,12 +88,6 @@ h1 {
 
 #projects:hover {
     cursor: pointer;
-}
-
-// end of intro section
-//start of header container
-.header-container {
-    display: none;
 }
 
 #home {
@@ -156,7 +150,7 @@ h1 {
 }
 
 #page-header {
-    background-image: url('../images/island.jpg');
+    background-image: url('../images/utah.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,30 +162,47 @@ h1 {
     -webkit-transition: 1.5s;
 }
 
-#page-header .name {
-    margin: 0;
-    text-align: center;
-    font-size: 101px;
-    color: white;
-    font-weight: 400;
-    line-height: 300px;
+.overlay:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:478px;
+  display: block;
+  z-index:0;
+  background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(75, 101, 121, 0.22) 1%, rgba(0, 17, 39, 0.84) 100%);
 }
 
-#page-header .title {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    letter-spacing: 6px;
-    font-weight: 100;
-    margin-top: -80px;
+    //background-color: rgba(255,0,0,0.5);
+
 }
 
-//end of header container
-//start of about me container
-.aboutme-container {
+// #page-header .name {
+//     margin: 0;
+//     text-align: center;
+//     font-size: 101px;
+//     color: white;
+//     font-weight: 400;
+//     line-height: 300px;
+// }
+
+// #page-header .title {
+//     text-align: center;
+//     color: white;
+//     font-size: 30px;
+//     letter-spacing: 6px;
+//     font-weight: 100;
+//     margin-top: -80px;
+// }
+
+.header-container{
     display: none;
+}
+
+.aboutme-container {
     text-align: center;
-    background: green;
+    display: none;
 }
 
 .royal-line {
@@ -257,8 +268,6 @@ h1 {
     margin: 45px auto;
 }
 
-//end of aboutme-container
-// start of my car
 .fa-arrow {
     background-image: url('../images/snapchat.png');
 }
@@ -275,6 +284,11 @@ h1 {
     margin: 18px;
 }
 
+.projectheader {
+    text-align: center;
+    font-size: 29px;
+}
+
 .projects {
     width: 990px;
     display: -webkit-flex;
@@ -282,6 +296,7 @@ h1 {
 }
 
 .thumbnail {
+    opacity:0;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -354,7 +369,7 @@ h1 {
     display: none;
     cursor: pointer;
     line-height: 154px;
-    background: #3b7e98;
+    background: #3385FF;
     text-decoration: none;
     padding: 0px 50px 0px 50px;
     font-size: 50px;
@@ -363,10 +378,7 @@ h1 {
     border-radius: 5px;
 }
 
-.projectheader {
-    text-align: center;
-    font-size: 29px;
-}
+
 
 .code:hover {
     color: white;
@@ -376,7 +388,7 @@ h1 {
     display: none;
     cursor: pointer;
     line-height: 197px;
-    background: #3b7e98;
+    background: #3385FF;
     text-decoration: none;
     padding: 0px 50px 0px 50px;
     font-size: 50px;
@@ -391,6 +403,7 @@ h1 {
 }
 
 .projects p {
+    opacity: 0;
     background-color: rgba(255, 255, 255, 0.145);
     border: 1px solid lightgrey;
     margin-top: -1px;
@@ -502,6 +515,7 @@ span {
 }
 
 .skills h2 {
+    opacity:.0;
     margin-left: 58px;
     line-height: 2px;
     margin-top: 57px;
