@@ -76,7 +76,7 @@ Portfolio.prototype.showStory = function(event) {
 Portfolio.prototype.slideShow = function(x) {
 
     var photo_index = 0;
-    var photos = ["nature3.jpg", "utah.jpg", "forest.jpg"];
+    var photos = ["nature3.jpg","forest.jpg", "utah.jpg"];
 
     function switchPhoto() {
         photo_index = (photo_index + 1) % photos.length;
