@@ -8,23 +8,23 @@ var Portfolio = function() {
 };
 
 Portfolio.prototype.mouseenter = function() {
-    $("body").on("mouseenter", "#my-story, #story", function() {
+    $("body").on("mouseenter", "#story", function() {
         $("#my-projects").css({ "-webkit-transition": ".9s", "filter": "grayscale(100%)", "-webkit-clip-path": "polygon(1125px 0, 998px 0, 987px 1020px, 767px 645px)" });
-        $(this).css({ "-webkit-transition": ".9s", "-webkit-clip-path": "polygon(0 0, 0 0, 0 1999px, 1143px 0)" });
+        $("#my-story").css({ "-webkit-transition": ".9s", "-webkit-clip-path": "polygon(0 0, 0 0, 0 1999px, 1143px 0)" });
         $('#projects').css("opacity", ".0");
 
     })
-    $("body").on("mouseleave", "#my-story, #story", function() {
+    $("body").on("mouseleave", "#story", function() {
         $('#my-projects').css({ "-webkit-clip-path": "polygon(746px 0, 991px 0, 990px 613px, 240px 613px)", "filter": "grayscale(0%)" });
         $('#projects').css("opacity", "1.0");
     });
-    $("body").on("mouseenter", "#my-projects, #projects", function() {
+    $("body").on("mouseenter", "#projects", function() {
         $("#my-story").css({ "-webkit-transition": ".9s", "filter": "grayscale(100%)", "-webkit-clip-path": "polygon(0 0, 0 0, 0 309px, 304px 0)" });
         $('#my-projects').css({ "-webkit-transition": ".9s", "-webkit-clip-path": "polygon(220px 0, 999px 0, 993px 613px, -248px 612px)" });
         $('#story').css("opacity", ".0");
 
     })
-    $("body").on("mouseleave", "#my-projects, #projects", function() {
+    $("body").on("mouseleave", "#projects", function() {
         $("#my-story").css({ "-webkit-clip-path": "polygon(0 0, 0 0, 0 934px, 750px 0)", "filter": "grayscale(0%)" });
         $('#my-projects').css("-webkit-clip-path", "polygon(746px 0, 991px 0, 990px 613px, 240px 613px)");
         $('#story').css("opacity", "1.0");
@@ -39,7 +39,7 @@ Portfolio.prototype.enterThumbnail = function(event) {
             $(this).children("a").hide();
             $(this, 'img').css("filter", "saturate(1)");
         });
-    portfolio.mouseenter();
+    // portfolio.mouseenter();
 }
 
 
@@ -63,7 +63,7 @@ Portfolio.prototype.showSnapChat = function(event) {
 }
 
 Portfolio.prototype.showStory = function(event) {
-    $("body").on("click", "#my-story, #story", function() {
+    $("body").on("click", "#story", function() {
         $(".intro-section").fadeOut();
         $(".header-container").fadeIn(2000);
         $(".aboutme-container").fadeIn(2000);
@@ -73,7 +73,7 @@ Portfolio.prototype.showStory = function(event) {
         $("body").css("background", "white");
     })
 
-    $("body").on("click", "#my-projects, #projects", function() {
+    $("body").on("click", "#projects", function() {
         $("body").css("background", "white");
         $(".intro-section").fadeOut();
         $(".header-container").fadeIn(2000);

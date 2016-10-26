@@ -25,7 +25,7 @@ h1 {
     width: 974px;
     height: 600px;
     -webkit-clip-path: polygon(0 0, 0 0, 0 934px, 750px 0);
-    cursor: pointer;
+    
 }
 
 #my-projects {
@@ -34,7 +34,7 @@ h1 {
     height: 600px;
     -webkit-clip-path: polygon(746px 0, 991px 0, 990px 613px, 240px 613px);
     position: absolute;
-    cursor: pointer;
+  
 }
 
 #rey {
@@ -70,6 +70,7 @@ h1 {
 
 #story:hover {
     cursor: pointer;
+    background: rgba(51, 133, 255, 1.00);
 }
 
 #projects {
@@ -89,6 +90,7 @@ h1 {
 
 #projects:hover {
     cursor: pointer;
+     background: rgba(51, 133, 255, 1.00);
 }
 
 #home {
