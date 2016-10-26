@@ -53,6 +53,15 @@ $(window).scroll(function() {
 
 });
 
+Portfolio.prototype.showSnapChat = function(event) {
+    $(".fa-snapchat").click(function() {
+        $('#snapcode').css('display', 'block');
+        $(".fa-snapchat").mouseleave(function() {
+            $('#snapcode').hide();
+        });
+    })
+}
+
 Portfolio.prototype.showStory = function(event) {
     $("body").on("click", "#my-story, #story", function() {
         $(".intro-section").fadeOut();
@@ -76,7 +85,7 @@ Portfolio.prototype.showStory = function(event) {
 Portfolio.prototype.slideShow = function(x) {
 
     var photo_index = 0;
-    var photos = ["nature3.jpg","forest.jpg", "utah.jpg"];
+    var photos = ["nature3.jpg", "forest.jpg", "utah.jpg"];
 
     function switchPhoto() {
         photo_index = (photo_index + 1) % photos.length;
@@ -179,3 +188,4 @@ portfolio.showStory();
 portfolio.slideShow();
 portfolio.displayDivs();
 portfolio.enterThumbnail();
+portfolio.showSnapChat();
