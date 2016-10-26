@@ -177,25 +177,25 @@ h1 {
     background: -webkit-radial-gradient(50% 55%, ellipse closest-corner, rgba(75, 101, 121, 0.22) 1%, rgba(0, 17, 39, 0.84) 100%);
 }
 
-//background-color: rgba(255,0,0,0.5);
-
+.name {
+    position: absolute;
+    margin-top: -346px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 83px;
+    font-weight: 100;
 }
-// #page-header .name {
-//     margin: 0;
-//     text-align: center;
-//     font-size: 101px;
-//     color: white;
-//     font-weight: 400;
-//     line-height: 300px;
-// }
-// #page-header .title {
-//     text-align: center;
-//     color: white;
-//     font-size: 30px;
-//     letter-spacing: 6px;
-//     font-weight: 100;
-//     margin-top: -80px;
-// }
+.title {
+    position: absolute;
+    margin-top: -241px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
 .header-container {
     display: none;
 }
