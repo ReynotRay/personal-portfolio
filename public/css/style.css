@@ -11,21 +11,19 @@ h1 {
 .container {
     margin: auto;
     -webkit-animation: fadein 2s;
-    width:100%;
+    width: 100%;
 }
 
 .intro-section {
     width: 985px;
     margin: 120px auto;
     text-align: center;
-    
 }
 
 #my-story {
     width: 974px;
     height: 600px;
     -webkit-clip-path: polygon(0 0, 0 0, 0 934px, 750px 0);
-    
 }
 
 #my-projects {
@@ -34,18 +32,18 @@ h1 {
     height: 600px;
     -webkit-clip-path: polygon(746px 0, 991px 0, 990px 613px, 240px 613px);
     position: absolute;
-  
 }
 
 #rey {
+   font-family: 'Ribeye', cursive;
     position: relative;
     margin: auto;
-    border-radius: 10px;
-    width: 153px;
+    border-radius: 6px;
+    width: 253px;
     top: -442px;
-    color: #00a9ff;
-    background: rgb(255, 255, 255);
-    font-size: 65px;
+    color: #edeeef;
+    background: rgba(0, 0, 0, 0.31);
+    font-size: 105px;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -56,6 +54,7 @@ h1 {
     position: relative;
     border-radius: 10px;
     top: -585px;
+    font-family: initial;
     left: 75px;
     color: white;
     width: 234px;
@@ -76,10 +75,11 @@ h1 {
 #projects {
     position: relative;
     border-radius: 10px;
-    top: -294px;
+    top: -324px;
     left: 638px;
-        width: 234px;
+    width: 234px;
     padding: 8px;
+    font-family: initial;
     color: white;
     background: rgba(51, 133, 255, 0.56);
     -o-transition: .5s;
@@ -90,13 +90,14 @@ h1 {
 
 #projects:hover {
     cursor: pointer;
-     background: rgba(51, 133, 255, 1.00);
+    background: rgba(51, 133, 255, 1.00);
 }
 
 #home {
     float: left;
     line-height: 45px;
     padding-left: 18px;
+
     padding-right: 18px;
     border-radius: 0px 0px 6px 6px;
     color: white;
@@ -185,6 +186,7 @@ h1 {
     font-size: 83px;
     font-weight: 100;
 }
+
 .title {
     position: absolute;
     margin-top: -241px;
@@ -199,16 +201,19 @@ h1 {
 .header-container {
     display: none;
 }
+
 .aboutme-container {
     text-align: center;
     display: none;
 }
+
 .royal-line {
     width: 125px;
     height: 52px;
     margin: 0px auto 0;
     border-bottom: 2px solid #3385FF;
 }
+
 .avatar {
     border-radius: 100%;
     display: inline-block;
@@ -216,17 +221,19 @@ h1 {
     background-color: rgba(255, 255, 255, 0.075);
     margin-top: 22px;
 }
+
 .yo {
     border-radius: 100%;
     display: block;
     width: 10em;
 }
+
 .icons {
-    cursor: pointer;    
+    cursor: pointer;
     padding: 0px;
     padding-right: 5px;
-
 }
+
 .icons li {
     display: inline;
     background: #3385FF;
@@ -243,11 +250,13 @@ h1 {
     -moz-transition: .5s;
     -webkit-transition: .5s;
 }
+
 .icons li a {
     color: white;
     text-decoration: none;
     font-size: 35px;
 }
+
 .iam {
     width: 531px;
     color: Grey;
@@ -258,80 +267,95 @@ h1 {
     background: white;
     text-align: center;
 }
+
 .first-column,
 .second-column,
 .third-column {
     width: 30%;
     margin: 18px;
 }
+
 .projectheader {
     text-align: center;
     font-size: 29px;
 }
+
 .projects {
     width: 990px;
     display: -webkit-flex;
     margin: auto;
 }
+
 .thumbnail {
     opacity: 0;
     border-radius: 10px 10px 0px 0px;
 }
+
 .thumbnail:hover {
     box-shadow: 0px -4px 8px 0px rgb(51, 133, 255);
 }
+
 #organized {
     background-image: url('../images/node.jpg');
     background-position: center;
     background-size: cover;
     height: 465px;
 }
+
 #snapchat {
     display: none;
     width: 115px;
 }
+
 #react {
     background-image: url('../images/react.jpg');
     background-position: center;
     background-size: cover;
     height: 465px;
 }
+
 #mag {
     background-image: url('../images/client.jpg');
     background-position: center;
     background-size: cover;
     height: 310px;
 }
+
 #sky {
     background-image: url('../images/skyline.jpg');
     background-position: center;
     background-size: cover;
     height: 310px;
 }
+
 #meal {
     background-image: url('../images/meal.jpg');
     background-position: center;
     background-size: cover;
     height: 465px;
 }
+
 #shopping {
     background-image: url('../images/shopping.jpg');
     background-position: center;
     background-size: cover;
     height: 465px;
 }
+
 #api {
     background-image: url('../images/api.jpg');
     background-position: center;
     background-size: cover;
     height: 412px;
 }
+
 #landing-page {
     background-image: url('../images/karma.jpg');
     background-position: center;
     background-size: cover;
     height: 310px;
 }
+
 .code {
     display: none;
     cursor: pointer;
@@ -344,9 +368,11 @@ h1 {
     opacity: .8;
     border-radius: 5px;
 }
+
 .code:hover {
     color: white;
 }
+
 .demo {
     display: none;
     cursor: pointer;
@@ -360,9 +386,11 @@ h1 {
     opacity: .8;
     margin-top: 150px;
 }
+
 .demo:hover {
     color: white;
 }
+
 .projects p {
     opacity: 0;
     background-color: rgba(255, 255, 255, 0.145);
@@ -373,15 +401,18 @@ h1 {
     line-height: 31px;
     border-radius: 0px 0px 10px 10px;
 }
+
 .projects-container {
     display: none;
 }
+
 .my-career {
     width: 100%;
     background-color: #f4f4f4;
     margin: auto;
     display: none;
 }
+
 .vertical-block {
     opacity: 0;
     width: 940px;
@@ -393,18 +424,22 @@ h1 {
     -moz-transition: .2s;
     -webkit-transition: .2s;
 }
+
 .vertical-block h2 {
     font-size: 22px;
 }
+
 .work {
     background: white;
     width: 418px;
     margin-top: 9px;
     border-radius: 5px;
 }
+
 #rbdevelop {
     float: left;
 }
+
 .fa-desktop,
 .fa-code,
 .fa-briefcase,
@@ -416,6 +451,7 @@ h1 {
     padding: 13px;
     background: #3385FF;
 }
+
 .abc,
 .abcde,
 .abcdefg {
@@ -424,6 +460,7 @@ h1 {
     margin-top: 44px;
     margin-right: 300px;
 }
+
 .abcd,
 .abcdef {
     float: left;
@@ -431,26 +468,33 @@ h1 {
     margin-top: 49px;
     margin-left: 336px;
 }
+
 #sa-conxepts {
     float: right;
     margin-right: -30px;
 }
+
 #bootcamp {
     float: left;
 }
+
 #graduation {
     float: right;
     margin-right: -30px;
 }
+
 #mireles {
     float: left;
 }
+
 span {
     color: #3385FF;
 }
+
 #conxepts {
     font-size: 13px;
 }
+
 .skills {
     width: 940px;
     margin: auto;
@@ -458,12 +502,14 @@ span {
     display: none;
     background: white;
 }
+
 .skills h2 {
     opacity: .0;
     margin-left: 58px;
     line-height: 2px;
     margin-top: 57px;
 }
+
 .progress {
     opacity: 0;
     height: 20px;
@@ -481,6 +527,7 @@ span {
     -moz-transition: .2s;
     -webkit-transition: .2s;
 }
+
 .progress-bar {
     float: left;
     width: 0;
@@ -495,6 +542,7 @@ span {
     -o-transition: width .6s ease;
     transition: width .6s ease;
 }
+
 #snapcode {
     display: none;
     width: 82px;
@@ -502,14 +550,17 @@ span {
     margin-left: -24px;
     margin-top: 20px;
 }
+
 .content-main {
     width: 100%;
     display: block;
     margin: auto;
 }
+
 .footer {
     text-align: center;
 }
+
 @media screen and (max-width:480px) {
     .container {
         display: none;
