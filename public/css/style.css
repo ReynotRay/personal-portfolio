@@ -53,11 +53,12 @@ h1 {
 #story {
     position: relative;
     border-radius: 10px;
-    top: -585px;
+    top: -606px;
     font-family: initial;
     left: 75px;
     color: white;
-    width: 234px;
+    width: 281px;
+    font-size: 38px;
     padding: 8px;
     background: #3385FF;
     background: rgba(51, 133, 255, 0.56);
@@ -75,9 +76,10 @@ h1 {
 #projects {
     position: relative;
     border-radius: 10px;
-    top: -324px;
+    top: -214px;
     left: 638px;
-    width: 234px;
+    width: 281px;
+    font-size: 38px;
     padding: 8px;
     font-family: initial;
     color: white;
